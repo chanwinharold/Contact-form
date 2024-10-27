@@ -1,0 +1,88 @@
+html {
+    background-color: #e0f1e7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+body{
+    width: 50%;
+    height: auto;
+    background-color: white;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    padding: 30px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+
+    font-family: "DejaVu Sans Mono", sans-serif;
+    line-height: 40px;
+}
+
+.radio-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.queryType {
+    display: block;
+    width: 48%;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #0c7d69;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ #email     { display: block; width: 98%; }
+ textarea   { width: 98%; height: 100px; }
+.name-input { display: block; width: 100%; }
+.name input { width: 95%; }
+button:hover{ background-color: #175f44; }
+
+
+.email,
+.radio,
+ button,
+.message,
+.checkbox { margin-top: 50px; }
+
+/************ POP UP ******************/
+
+span             { font-size: 30px; }
+#popup-container { display: none; }
+
+#popup-container {
+    background-color: #175f44;
+    border: 1px solid black;
+    border-radius: 10px;
+    align-self: center;
+    position: absolute;
+    line-height: 10px;
+    font-size: 11px;
+    padding: 20px;
+    z-index: 1000;
+    color: white;
+    top: 20px;
+}
+
+#ok {
+    background-color: #0c7d69;
+    border-radius: 5px;
+    margin-top: 5px;
+}
