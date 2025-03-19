@@ -1,17 +1,16 @@
 html {
     background-color: #e0f1e7;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     position: relative;
 }
 
 body{
-    width: 50%;
-    height: auto;
     background-color: white;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    margin: 1rem;
     padding: 30px;
     border-radius: 15px;
 
@@ -27,11 +26,11 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    gap: 2px;
 }
 
 .queryType {
-    display: block;
-    width: 48%;
+    flex-basis: 50%;
     border: 1px solid;
     border-radius: 5px;
 }
@@ -85,4 +84,16 @@ span             { font-size: 30px; }
     background-color: #0c7d69;
     border-radius: 5px;
     margin-top: 5px;
+}
+
+/*********** MEDIA QUERIES **********/
+
+@media screen and (max-width:480px) {
+    .name, .radio-container {
+        flex-direction: column;
+    }
+    .radio-container {
+        gap: 1rem;
+    }
+
 }
